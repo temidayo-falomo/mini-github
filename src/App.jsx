@@ -19,8 +19,6 @@ function App() {
   const [reposList, setReposList] = useState([]);
   const [searchList, setSearchList] = useState("");
 
-  console.log(process.env.REACT_APP_GITHUB_KEY);
-
   useEffect(() => {
     axios
       .get(`https://api.github.com/users/${userName}`, {
