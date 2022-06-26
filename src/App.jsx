@@ -19,11 +19,13 @@ function App() {
   const [reposList, setReposList] = useState([]);
   const [searchList, setSearchList] = useState("");
 
+  console.log(process.env.REACT_APP_GITHUB_KEY);
+
   useEffect(() => {
     axios
       .get(`https://api.github.com/users/${userName}`, {
         headers: {
-          Authorization: `token ${process.env.REACT_APP_GITHUB_KEY}`,
+          Authorization: `token${process.env.REACT_APP_GITHUB_KEY}`,
         },
       })
       .then((res) => {
@@ -34,13 +36,13 @@ function App() {
     axios
       .get(`https://api.github.com/users/${userName}/repos`, {
         headers: {
-          Authorization: `token ${process.env.REACT_APP_GITHUB_KEY}`,
+          Authorization: `token${process.env.REACT_APP_GITHUB_KEY}`,
         },
       })
       .then((res) => {
         setReposList(res.data);
       })
-      .catch((err) => setError(err));
+      .catch((err) => console.log(err));
   }, [click]);
 
   const filteredRepos = reposList.filter((repo) =>
