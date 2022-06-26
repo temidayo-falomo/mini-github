@@ -1,0 +1,40 @@
+.repos {
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.repos::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+.repos::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.repos::-webkit-scrollbar-thumb {
+  background-color: #FE93F4;
+}
+
+.repos-top {
+  border: 4px black solid;
+  display: flex;
+  margin: 1rem 0;
+  padding: 10px;
+}
+
+.repos-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .repos {
+    overflow: visible;
+    height: 100%;
+  }
+
+  .repos-list {
+    justify-content: center;
+  }
+}

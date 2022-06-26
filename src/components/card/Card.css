@@ -1,0 +1,43 @@
+.card {
+    width: 400px;
+    min-height: 250px;
+    border: 4px black solid;
+    margin: 1rem;
+    background-color: white;
+    color: #000;
+    /* justify-content: space-between; */
+}
+
+.card-header {
+    background-color: #82B4FF;
+    border-bottom: 4px black solid;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.card p {
+    padding: 15px;
+}
+
+.card-content {
+    height: 100%;
+    justify-content: space-between;
+}
+
+.card-bottom {
+    padding: 15px;
+    justify-self: flex-end;
+    align-items: center;
+    gap: .5rem;
+    justify-content: space-between;
+}
+
+.card-bottom .div {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.tip {
+    width: 20px;
+}

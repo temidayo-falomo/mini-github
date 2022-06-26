@@ -1,0 +1,42 @@
+.Confirm {
+  min-height: 95vh;
+  border: 2px black solid;
+  padding: 1rem;
+  margin: 1.5rem;
+}
+
+.confirm-center {
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.confirm-center img {
+    width: 250px;
+}
+
+.confirm-center h2 {
+    font-size: 2.2rem;
+}
+
+.confirm-center p {
+    font-size: 1.5rem;
+}
+
+.confirm-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.not-found {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.confirm-btns button {
+    
+}

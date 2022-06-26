@@ -1,0 +1,16 @@
+.Dashboard {
+    display: grid;
+    grid-template-columns: 380px auto;
+    height: 100vh;
+}
+
+@media (max-width: 950px) {
+    body {
+        overflow: auto;
+    }
+    .Dashboard {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
