@@ -5,11 +5,10 @@ import { UserContext } from "../../helper/Context";
 import "./Navbar.css";
 
 function Navbar() {
-  const { userName, setUserName } = useContext(UserContext);
-
   const unSave = window.localStorage.setItem("", JSON.stringify(""));
+  const { setUserName } = useContext(UserContext);
 
-  const { usersList, setUsersList, searchList, setSearchList } =
+  const { usersList, setSearchList } =
     useContext(UserContext);
 
   const handleSearchSubmit = (e) => {
@@ -19,7 +18,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="welcome-box row">
         <img src="./assets/star.svg" alt="" />
-        <h1>Welcome, {usersList.name}</h1>
+        <h1>Welcome, {usersList.name ? usersList.name : "User"}</h1>
       </div>
 
       <form className="search-box" onSubmit={handleSearchSubmit}>

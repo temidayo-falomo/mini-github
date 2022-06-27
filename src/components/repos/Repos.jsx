@@ -6,7 +6,6 @@ import "./Repos.css";
 function Repos(props) {
   return (
     <>
-      {/* <div className="repos-top">Your Repositories : </div> */}
       <div className="repos">
         <div className="repos-list">
           {props.filteredRepos.map((data, index) => {

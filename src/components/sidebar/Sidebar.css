@@ -2,14 +2,24 @@
   background-color: wheat;
   padding: 1rem;
   gap: 1.2rem;
-  text-align: left;
-  border-right: 4px black solid;
+  text-align: center;
+  border-right: 3px black solid;
   font-size: 1.1rem;
 }
 
 .sidebar-top {
     display: flex;
-    border: 4px black solid;
+    border: 3px black solid;
+    position: relative;
+}
+
+.sidebar-top .tip {
+    width: 60px;
+    right: .5rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
 }
 
 .sidebar-center {
@@ -28,7 +38,7 @@
 
 .sidebar-center img {
     width: 300px;
-    border: 4px black solid;
+    border: 3px black solid;
 }
 
 .sidebar-top img {
@@ -63,7 +73,7 @@
 }
 
 @media(max-width: 950px) {
-    .advert-box img {
+    .advert-box .box {
         display: none;
     }
 

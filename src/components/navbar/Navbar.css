@@ -1,13 +1,13 @@
 .navbar {
-  border: 4px black solid;
+  border: 3px black solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .welcome-box {
-  background-color: rgb(243, 242, 242);
-  border-right: 4px black solid;
+  background-color: rgb(234, 229, 229);
+  border-right: 3px black solid;
   padding: 10px;
   height: 100%;
   justify-content: flex-start;
