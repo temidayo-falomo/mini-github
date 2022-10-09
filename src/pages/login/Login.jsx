@@ -16,14 +16,14 @@ function Login() {
   };
 
   useEffect(() => {
-    const data = window.localStorage.getItem("username");
+    const data = window.localStorage.getItem("github-username");
     if (data !== null) {
       setUserName(JSON.parse(data));
     }
   }, []);
 
   useEffect(() => {
-    window.localStorage.setItem("username", JSON.stringify(userName));
+    window.localStorage.setItem("github-username", JSON.stringify(userName));
   }, [userName]);
 
   return (

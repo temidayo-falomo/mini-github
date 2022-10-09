@@ -31,32 +31,31 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center !important;
   gap: 1rem;
   width: 50%;
+  flex-wrap: wrap;
 }
 
-
 .search-box input {
-    height: 70%;
-    width: 70%;
-    padding: 15px;
+  width: 70%;
+  padding: 10px;
 }
 
 .search-box button {
-    padding: 2px 15px;
-    background-color: #3DD1E7;
-    color: #000;
+  padding: 2px 15px;
+  background-color: #3dd1e7;
+  color: #000;
 }
 
-.search-box a button{
+.search-box a button {
   background-color: rgb(206, 37, 37);
   background-color: #fff;
   color: #000;
   margin-left: 20px;
 }
 
-@media(max-width: 560px) {
+@media (max-width: 560px) {
   .navbar {
     display: flex;
     flex-direction: column;

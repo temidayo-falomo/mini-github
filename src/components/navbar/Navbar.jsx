@@ -30,11 +30,11 @@ function Navbar() {
         <button>
           <HiSpeakerphone />
         </button>
-        <Link to="/">
+        {/* <Link to="/">
           <button onClick={() => setUserName(JSON.parse(unSave))}>
             Sign Out
           </button>
-        </Link>
+        </Link> */}
       </form>
     </nav>
   );

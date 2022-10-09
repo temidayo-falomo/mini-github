@@ -10,11 +10,11 @@ import Confirm from "./pages/confirm/Confirm";
 import Dashboard from "./pages/dashboard/Dashboard";
 
 function App() {
-  const save = window.localStorage.getItem("username");
+  const save = window.localStorage.getItem("github-username");
 
   const [userName, setUserName] = useState(JSON.parse(save));
   const [usersList, setUsersList] = useState({});
-  const [error, setError] = useState("");
+  const [err, setErr] = useState("");
   const [click, setClick] = useState(false);
   const [reposList, setReposList] = useState([]);
   const [searchList, setSearchList] = useState("");
@@ -60,7 +60,7 @@ function App() {
         setReposList,
         searchList,
         setSearchList,
-        error,
+        err,
       }}
     >
       <div className="App">

@@ -5,20 +5,16 @@ import { UserContext } from "../../helper/Context";
 import "./Confirm.css";
 
 function Confirm() {
-  const { usersList, setUsersList, error } = useContext(UserContext);
+  const { usersList, setUsersList, err } = useContext(UserContext);
 
   const handleRefresh = () => {
     window.location.reload();
   };
 
-  // setTimeout(()=> {
-  //   window.location.reload();
-  // }, [1000])
-
   return (
     <div className="Confirm">
       <ToolNav />
-      {error.name === "AxiosError" ? (
+      {err.name === "AxiosError" ? (
         <div className="not-found">
           <h2>User Not Found</h2>
           <Link to="/">
@@ -26,7 +22,7 @@ function Confirm() {
               Go-Back
             </button>
           </Link>
-          <Link to='/confirm'>
+          <Link to="/confirm">
             <button className="button-53" onClick={handleRefresh}>
               Try Refreshing ?
             </button>
